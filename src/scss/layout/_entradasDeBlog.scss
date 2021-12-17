@@ -1,0 +1,57 @@
+@include tablet{
+    .seccion-inferior{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 2rem;
+
+    }
+}
+
+.entrada-blog{
+    margin-bottom: 2rem;
+
+    @include tablet{
+        display: grid;
+        grid-template-columns: 1fr 2fr ;
+        column-gap: 2rem;
+    }
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+    
+}
+
+.informacion-meta{
+     span{
+        color: $amarillo;
+    }
+}
+
+
+.texto-entrada{
+    a{
+        color: $negro;
+        //los a son display inline , por lo tanto no puede tener margin, si queremos que tengan margin lo que tenemos que hacer es cambiarles el display a block y ahi si ya deja
+        display: block;
+        margin-top: 2rem;
+        @include tablet{
+            margin-top: 0 ;
+        }
+    }
+    h4{
+        margin: 0;
+        line-height: 1.4;
+
+        &::after{
+            margin-top: 1rem;
+            content: '';
+            display: block;
+            width: 15rem;
+            height: .5rem;
+            background-color: $verde;
+
+        }
+    }
+   
+}
+

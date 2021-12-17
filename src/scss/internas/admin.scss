@@ -1,0 +1,47 @@
+.alerta{
+    padding: .5rem;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    border-radius: 20px;
+    &.error{ // el & va cuando ambos indicadores estan en el mismo nivel
+            background-color: rgb(247, 33, 33);
+    }
+
+    &.exito{
+        background-color: green;
+        text-align: center;
+    }
+}
+table.propiedades{ 
+    margin-top: 4rem;
+    width: 100%;
+    border-spacing: 0;
+    
+
+    thead{
+        background-color: green;
+
+        th { 
+            color: white;
+            padding: 2rem;
+        }
+    }         
+    tr{
+        td{
+           color: white;
+           font-size:20px;
+           font-weight: bold;
+           text-align: center;
+        } 
+    }
+    .imagen-tabla{
+        width: 10rem;
+    }
+}
+
+
+.imagen-miniatura{
+    width: 20rem; 
+}

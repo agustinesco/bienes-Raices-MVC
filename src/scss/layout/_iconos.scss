@@ -1,0 +1,15 @@
+.iconos-contenido{
+    @include tablet{
+        @include grid(3 , $separacion);
+        
+    }
+}
+.icono{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+        max-height: 10rem;
+        max-width: 10rem;
+    }
+}
